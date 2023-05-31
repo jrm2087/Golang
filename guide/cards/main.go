@@ -9,12 +9,9 @@ package main
 //}
 
 func main() {
-	// slice
-	cards := deck{"Ace of Spades", newCard()}
-	cards = append(cards, "Six of Spades")
-	cards.print()
-}
+	cards := newDeck()
+	hand, remainingCards := deal(cards, 5)
 
-func newCard() string {
-	return "Five of Diamonds"
+	hand.print()
+	remainingCards.print()
 }
