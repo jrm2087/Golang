@@ -22,8 +22,8 @@ func main() {
 			zipCode: 11101,
 		},
 	}
-	jrPointer := &jr // memory address
-	jrPointer.updateName("Darío")
+	//jrPointer := &jr // memory address
+	jr.updateName("Darío")
 	jr.print()
 }
 
